@@ -1,22 +1,27 @@
 import time
-
+#Tillit og Fremdrift er lagt in som gjeldende poengsystem - Brukes for å måle prosjektets fremdrift
 tillit = 0
 fremdrift = 0
 
 print("Prosjektleder Erling sitter i saksa. Han har fått flere potensielle konflikter han må løse. Lille Erling føler at verden er imot han. Kan du hjelpe han?")
+#svar = input brukes for å ta imot brukerens svar
 svar = input("Vil du hjelpe Erling? (ja/nei): ") 
 if svar == "ja":
     print("Du er en god venn! :)")
+    #timesleep brukes for å lage pause i spillet. 
     time.sleep(3)
-
+#if/elif/else brukes for å lage en if-setning som tar imot svar fra brukeren.
 elif svar == "nei":
     print("Stakkars Erling! Da må han klare seg selv :'(.")
 else:
     print("Ugyldig svar! Du må skrive ja eller nei.")
+#svar == "ja" brukes for å sjekke om brukeren har skrevet ja. Hvis ja, fortsetter spillet.
 if svar == "ja":
+    #print ligger i en if-setning for å skrive ut tekst til brukeren. print() brukes for å lage en tom linje mellom tekstene.
     print()
     print("Plutselig hører du en merkelig lyd fra møterommet...")
     print("Du kjenner spenningen stige. Følelsene er i full sving!")
+    #Symboler som musikknoter er limt inn for å lage en mer dramatisk effekt.* er for å lage en effekt som viser at musikken starter.
     print("🎵 *CUE BOSS MUSIC* 🎵")
     print("Å NEI! EN KONFLIKT HAR DUKKET OPP!")
     print()
@@ -24,6 +29,7 @@ if svar == "ja":
     time.sleep(5)
     
     print("--- Konflikt mellom SILJE OG ELIAS ---")
+    #--- brukes for å lage en visuell effekt som viser at konflikten starter.
     print("Silje og Elias krangler om medborgerportalen.")
     print("Silje vil ha et brukervennlig design, mens Elias er bekymret for sikkerheten og budsjettet.")
     print("Det som startet som en faglig uenighet, har nå blitt personlig. Emosjonene har tatt overhånd, og begge parter trekker inn andre i konflikten sin.")
@@ -38,6 +44,7 @@ if svar == "ja":
 
     valg1 = input("Velg 1 eller 2: ")
     if valg1 == "1":
+        #valg1 == "1" brukes for å sjekke om brukeren har skrevet 1. Hvis ja, fortsetter spillet.
         print("Erling bestemmer seg for å snakke med Silje og Elias hver for seg.")
         print("Men hvordan skal han få dem til å bli enige? Erling må velge en strategi:O")
 
@@ -47,10 +54,12 @@ if svar == "ja":
         print("2. Kompromiss – begge parter må gi litt etter.")
 
         strategi1 = input("Velg 1 eller 2: ")
+        #velg 1 eller 2 brukes for å sjekke om brukeren har skrevet 1 eller 2. Hvis ja, fortsetter spillet.
 
         if strategi1 == "1":
             tillit -= 2
             fremdrift += 1
+            #poengsystemet i bruk for å måle prosjektets fremdrift. Tillit og fremdrift brukes for å måle prosjektets fremdrift.
             
             time.sleep(3)
             
@@ -84,6 +93,7 @@ if svar == "ja":
         print("Denne gangen var en åpen samtale akkurat det gruppen trengte. Men vil samme strategi fungere neste gang?")
     else:
         print("Ugyldig valg!")
+        #merkes ugyldig valg hvis brukeren skriver noe annet enn 1 eller 2.
     print()
     
     time.sleep(3)
@@ -126,6 +136,7 @@ if svar == "ja":
     print("2. Samle Hamdi og Hallgeir til en plenumssamtale.")
 
     valg2 = input("Velg 1 eller 2: ")
+    #Nytt valg, derfor valg2. 
 
     time.sleep(3)
 
@@ -159,6 +170,7 @@ if svar == "ja":
 
         print("Erling stirrer tomt ut i luften. Han har allerede valgt denne strategien. Det er forseint nå.")
     if valg1 == "1" and strategi1 == "1" and valg2 == "1":
+        #and brukes for å sjekke om flere betingelser er sanne samtidig. Hvis ja, printes en melding.
         print()
         
         time.sleep(3)
@@ -207,6 +219,7 @@ if svar == "ja":
                 time.sleep(4)
                 
                 print("🏆 WOW! DU ER JO EN KONFLIKTHÅNDTERINGSLEGENDE!")
+                #pokal-emoji limt inn for å lage en visuell effekt som viser at brukeren har valgt den beste løsningen sålangt.
                 print("Du har valgt den beste løsningen i begge konfliktene!")
                 print("Erling vurderer seriøst å ansette deg som personlig rådgiver.")
 
