@@ -335,6 +335,7 @@ if svar == "ja":
     time.sleep(3)
 
     if tillit >= 3 and fremdrift >= 0:
+        #>= brukes for å sjekke om tillit er større enn eller lik 3 og fremdrift er større enn eller lik 0. Hvis ja, printes en melding.
         print()
         print("--- SLUTT 1: ERLING HAR REDDET PROSJEKTET! ---")
         print("Tillit og kommunikasjon er gjenopprettet i gruppen.")
